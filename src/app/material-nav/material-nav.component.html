@@ -1,0 +1,16 @@
+<ul class="nav navMat" role="tablist">
+  <li class="nav-item" class="matTab" *ngFor="let g of ms.game.materials.unlocked; trackBy:getUnitId">
+    <app-tab [id]="g.id" [name]="g.name" [isEnding]="g.isEnding"  [quantity]="g.quantity" [perSec]="g.c" >
+
+    </app-tab>
+  </li>
+  <li *ngIf="ms.game.firstEndigUnit">
+    <clr-alert [clrAlertCloseable]="false" [clrAlertType]="ms.game.firstEndigUnit.endIn < 3600000 ? 'alert-danger':'alert-warning'" >
+      <div clr-alert-item class="alert-item" >
+        <span class="alert-text"></span>
+        {{ms.game.firstEndigUnit.game}} is ending in {{ms.game.firstEndigUnit.endIn | endIn}}
+      </div>
+
+    </clr-alert>
+  </li>
+</ul>

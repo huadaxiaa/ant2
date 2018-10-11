@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: RobotoMono;
+    src: url("assets/RobotoMono-Regular.ttf");
+  }
+  
+  html {
+    font-size: 24px;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 0.2rem;
+    width: 0.2rem;
+  }
+  
+  ::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.2rem;
+  }
+  
+  //#region slider
+  
+  .ui-slider {
+    background-color: transparent !important;
+  }
+  
+  .ui-widget-content {
+    border-radius: 0.125rem !important;
+  }
+  
+  .ui-slider-range {
+    border-radius: 0.08rem !important;
+    height: 101% !important;
+  }
+  
+  //#endregion
+  
+  .header .header-nav .nav-link,
+  .main-container .header-overflow-trigger::after {
+    &:first-of-type::before,
+    &:last-of-type::after {
+      height: 1.5rem !important;
+      top: 0 !important;
+    }
+  }
+  
+  header .header-nav .nav-link,
+  .main-container .header-overflow-trigger::after {
+    &:first-of-type::before,
+    &:last-of-type::after {
+      height: 1.5rem !important;
+      top: 0 !important;
+    }
+  }
+  .header .header-nav .nav-link:first-of-type::before,
+  .header .header-nav .nav-link:last-of-type::after,
+  header .header-nav .nav-link:first-of-type::before,
+  header .header-nav .nav-link:last-of-type::after {
+    height: 1.5rem !important;
+    top: 0 !important;
+  }
+  
+  .datagrid-body {
+    padding-bottom: 0.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    .main-container .header-hamburger-trigger,
+    .main-container .header-overflow-trigger {
+      width: 1.5rem !important;
+    }
+  }
+  
+  .nav-group-content {
+    border-left: 10px solid #49afd9 !important;
+    border-radius: 5px 0 0 5px !important;
+    margin: 2px 0 0 2px !important;
+  }
+  

@@ -1,0 +1,99 @@
+$height: 1.5rem;
+
+:host /deep/ .header-hamburger-trigger,
+:host /deep/ .header-overflow-trigger {
+  height: $height !important;
+}
+header,
+.header {
+  height: $height;
+}
+header .header-nav .nav-link .fa,
+header .header-nav .nav-link .nav-icon,
+header .header-nav .nav-link .nav-text,
+header .header-nav .nav-link.nav-icon,
+header .header-nav .nav-link.nav-text,
+.header .header-nav .nav-link .fa,
+.header .header-nav .nav-link .nav-icon,
+.header .header-nav .nav-link .nav-text,
+.header .header-nav .nav-link.nav-icon,
+.header .header-nav .nav-link.nav-text {
+  line-height: $height;
+}
+header .branding > a,
+header .branding > .nav-link,
+.header .branding > a,
+.header .branding > .nav-link {
+  height: $height;
+  line-height: $height;
+}
+header .branding .title,
+.header .branding .title {
+  line-height: $height;
+}
+header .settings .nav-link .fa,
+header .settings .nav-link .nav-icon,
+header .settings .nav-link .nav-text,
+header .settings .nav-link.nav-icon,
+header .settings .nav-link.nav-text,
+header .header-actions .nav-link .fa,
+header .header-actions .nav-link .nav-icon,
+header .header-actions .nav-link .nav-text,
+header .header-actions .nav-link.nav-icon,
+header .header-actions .nav-link.nav-text,
+.header .settings .nav-link .fa,
+.header .settings .nav-link .nav-icon,
+.header .settings .nav-link .nav-text,
+.header .settings .nav-link.nav-icon,
+.header .settings .nav-link.nav-text,
+.header .header-actions .nav-link .fa,
+.header .header-actions .nav-link .nav-icon,
+.header .header-actions .nav-link .nav-text,
+.header .header-actions .nav-link.nav-icon,
+.header .header-actions .nav-link.nav-text {
+  line-height: $height;
+}
+header .settings .nav-icon,
+header .header-actions .nav-icon,
+.header .settings .nav-icon,
+.header .header-actions .nav-icon {
+  height: $height;
+  width: $height;
+}
+header .branding,
+header .header-nav,
+header .search-box,
+header .search,
+header .settings,
+header .header-actions,
+header .divider,
+.header .branding,
+.header .header-nav,
+.header .search-box,
+.header .search,
+.header .settings,
+.header .header-actions,
+.header .divider {
+  height: $height;
+}
+
+.actMinH {
+  min-height: 8.5rem;
+}
+
+.multiBuy {
+  background: none;
+  border: 0;
+  color: #fafafa;
+  max-width: 2rem;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#multiLabel:before {
+  display: none;
+}
+
+.search {
+  margin-right: 1.2rem;
+}

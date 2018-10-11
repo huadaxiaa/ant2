@@ -24,12 +24,35 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob":"clr-ui.min.css",
+                "input":"./node_modules/@clr/ui/",
+                "output": "./"
+              },
+              {
+                "glob":"clr-ui-dark.min.css",
+                "input":"./node_modules/@clr/ui/",
+                "output": "./"
+              }
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
+              "node_modules/vis/dist/vis-network.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeng/resources/themes/start/theme.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/@clr/icons/clr-icons.min.css",
               "src/styles.scss"
+
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/chart.js/dist/Chart.min.js",
+              "./node_modules/break_infinity.js/break_infinity.min.js",
+              "./node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "./node_modules/swarm-numberformat/dist/swarm-numberformat.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,7 +108,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/chart.js/dist/Chart.min.js",
+              "./node_modules/break_infinity.js/break_infinity.js",
+              "./node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "./node_modules/swarm-numberformat/dist/swarm-numberformat.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
